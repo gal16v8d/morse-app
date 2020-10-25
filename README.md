@@ -9,5 +9,9 @@ The activate the virtual env:
 source venv/bin/activate
 Install python libs as you need it
 
+# set up
+For generate requirements.txt file please execute:
+pip3 freeze > requirements.txt
+
 # launch
 python3 app.py
