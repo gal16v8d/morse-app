@@ -1,37 +1,38 @@
 import string
 
+
 class Letters:
 
     ALPHABET = list(string.ascii_lowercase)
-    
-    MORSE = ['·-','-···', '-·-·', '-··', '·',
-    '··-·', '--·', '····', '··', '·---', '-·-',
-    '·-··', '--', '-·', '---', '·--·', '--·-',
-    '·-·', '···', '-', '··-', '···-', '·--',
-    '-··-', '-·--', '--··']
+
+    MORSE = ['·-', '-···', '-·-·', '-··', '·',
+             '··-·', '--·', '····', '··', '·---', '-·-',
+             '·-··', '--', '-·', '---', '·--·', '--·-',
+             '·-·', '···', '-', '··-', '···-', '·--',
+             '-··-', '-·--', '--··']
     MORSE_INT = [
-    '-----', '·----', '··---', '···--', '····-', 
-    '·····', '-····', '--···', '---··', '----·' 
+        '-----', '·----', '··---', '···--', '····-',
+        '·····', '-····', '--···', '---··', '----·'
     ]
 
-    def isInteger(self, n):
+    def is_integer(self, n):
         try:
             int(n)
             return True
         except ValueError:
             return False
 
-    def posInAlphabet(self, input):
+    def pos_in_alphabet(self, input):
         try:
             return self.ALPHABET.index(input)
         except:
             return -1
-    
-    def convertToMorse(self, input):
-        if (self.isInteger(input)):
+
+    def convert_to_morse(self, input):
+        if (self.is_integer(input)):
             return self.MORSE_INT[int(input)]
         else:
-            index = self.posInAlphabet(input)
+            index = self.pos_in_alphabet(input)
             if (index != -1):
                 return self.MORSE[index]
             else:
