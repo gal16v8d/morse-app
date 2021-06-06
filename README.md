@@ -3,6 +3,7 @@
 # Get started
 
 ## Unix
+
 Install python3-venv:
 sudo apt install python3-venv
 Then create the folder for allocate the virtual environment:
@@ -17,6 +18,7 @@ De-activate virtual env:
 deactivate
 
 ## Windows
+
 Update pip:
 py -m pip install --upgrade pip
 Install python3-venv:
@@ -32,12 +34,18 @@ Check our current installed packages:
 py -m pip list
 De-activate virtual env:
 deactivate
+
 # set up
+
 For generate requirements.txt file please execute:
 pip3 freeze > requirements.txt
 
 # launch
+
 ## Unix
-python3 app.py
+
+python3 morse/app.py
+
 ## Windows
-py app.py
+
+py morse/app.py
