@@ -15,7 +15,7 @@ pipenv shell
 Run command inside virtualenv:
 pipenv run
 Exit virtual env:
-exit o deactivate
+exit or deactivate
 
 ## Windows
 
