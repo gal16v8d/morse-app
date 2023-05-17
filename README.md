@@ -1,51 +1,111 @@
 # morse-app
 
+Converts an user input into its morse equivalent
+
 # Get started
 
 ## Unix
 
 Install pipenv:
+
+```bash
+sudo apt install python3-venv
 pip3 install pipenv
+```
+
 Then create the folder for allocate the virtual environment:
+
+```bash
 mkdir .venv
+```
+
 Launch pipenv:
-pipenv install --skip-lock
+
+```bash
+pipenv install
+```
+
 Then activate the virtual env:
+
+```bash
 pipenv shell
+```
+
 Run command inside virtualenv:
+
+```bash
 pipenv run
+```
+
 Exit virtual env:
-exit or deactivate
+
+```bash
+exit
+```
+
+or
+
+```bash
+deactivate
+```
 
 ## Windows
 
 Update pip:
-py -m pip install --upgrade pip
-Install python3-venv:
-py -m pip install virtualenv
-Then create the folder for allocate the virtual environment:
-py -m virtualenv env
-Then activate the virtual env:
-Set-ExecutionPolicy Unrestricted -Scope Process (run if UnauthorizedAccess in powershell console)
-.\venv\Scripts\activate.ps1
-Now you can install python libs as you need it
 
-Check our current installed packages:
-py -m pip list
-De-activate virtual env:
-deactivate
+```bash
+py -m pip install --upgrade pip
+```
+
+Install python3-venv:
+
+```bash
+py -m pip install virtualenv
+```
+
+Then create the folder for allocate the virtual environment:
+
+```bash
+py -m virtualenv env
+```
+
+Optional (run if UnauthorizedAccess in powershell console):
+
+```bash
+Set-ExecutionPolicy Unrestricted -Scope Process
+```
+
+Then activate the virtual env:
+
+```bash
+.\venv\Scripts\activate.ps1
+```
+
+Now you can install python libs as you need it
 
 # set up
 
 Configure all your dependencies in Pipfile.
-See: https://pypi.org/
+See: [Pypi](https://pypi.org/)
+
+# dependencies
+
+For generate requirements.txt file please execute:
+
+```bash
+pip3 freeze > requirements.txt
+```
 
 # launch
 
 ## Unix
 
+```bash
 python3 morse/app.py
+```
 
 ## Windows
 
+```bash
 py morse/app.py
+```
