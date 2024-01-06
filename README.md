@@ -6,7 +6,7 @@ Converts an user input into its morse equivalent
 
 ## Unix
 
-IInstall poetry:
+Install poetry:
 
 ```bash
 curl -sSL https://install.python-poetry.org | python3 -
